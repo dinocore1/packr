@@ -5,7 +5,7 @@ solution "packr"
 		kind "WindowedApp"
 		language "C++"
 		-- buildoptions { "-Wall" }
-		files { "**.h", "src/launcher.cpp", "src/main-windows.cpp" }
+		files { "**.h", "src/launcher.cpp", "src/main-windows.cpp", "src/splash-windows.cpp" }
 		includedirs { "include", "include/jni-headers", "include/jni-headers/win32" }
 		defines { "WINDOWS" }
 		flags { "StaticRuntime", "WinMain" }

@@ -20,6 +20,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <direct.h>
+#include "splash-windows.h"
 
 std::string getExecutableDir() {
 	HMODULE hModule = GetModuleHandleW(NULL);
@@ -40,6 +41,7 @@ int g_argc;
 char** g_argv;
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) {
+	SplashScreen::ShowSplashImage(hInstance);
 	launchVM(0);
 }
 
